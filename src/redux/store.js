@@ -51,7 +51,7 @@ const getFeedback = (state = [], action) => {
 
         const feedback = action.payload
         console.log('review of feed back', feedback);
-        return [...state, feedback]
+        return feedback
     }
 
     if (action.type === "CLEAR_INPUTS") {
@@ -67,7 +67,7 @@ const getFeedback = (state = [], action) => {
 
 
 
-const store = createStore(
+const store = createStore(  
     combineReducers({
         FeelingRating,
         UnderstandingRating,

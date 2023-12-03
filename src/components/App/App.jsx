@@ -7,7 +7,7 @@ import SupportRating from '../SupportRating';
 import Comment from '../comments';
 import FeedbackReview from '../reveiwPage';
 import ResetFeedback from '../thanks/reset-page';
-import StartOver from '../finishPage';
+import AdminTable from '../thanks/Admin Page';
 
 function App() {
 
@@ -35,6 +35,9 @@ function App() {
         </Route>
         <Route exact path = "/finish">
           <ResetFeedback/>
+        </Route>
+        <Route exact path="/admin">
+          <AdminTable/>
         </Route>
       </Router>
     </div>
